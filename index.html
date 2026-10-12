@@ -1,15 +1,74 @@
 <!DOCTYPE html>
-<html lang="TR">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AkınAcar Web Sayfasına Hoşgeldiniz.</title>
+    <title>Akın Açar - Kişisel Web Sayfası</title>
+    <style>
+        /* Sade ve temel CSS dokunuşları */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f6f9;
+            color: #333;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: #ccc;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .profile-img {
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 15px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .contact-item img {
+            margin-right: 10px;
+        }
+
+        a {
+            color: #25d366;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1>Akın Acar Personel Page</h1>
-    <img src="flex.jpg" alt="Akın Açar Fotoğraf" width="200">
 
-    <h3>Eğitim(Education)</h3>
+    <h1>Akın Açar Personal Page</h1>
+    
+    <img src="flex.jpg" alt="Akın Açar Fotoğraf" width="180" class="profile-img">
+
+    <h3>Eğitim (Education)</h3>
     <hr>
     <ul>
         <li>Namık Kemal İlkokulu</li>
@@ -17,41 +76,53 @@
         <li>Kıraç Borsa Mesleki ve Teknik Anadolu Lisesi</li>
     </ul>
 
-<h3>Projeler(Projects)</h3>
-<hr>
+    <h3>Projeler (Projects)</h3>
+    <hr>
     <ul>
-         <li>Kişisel WebSite</li>
+        <li>Kişisel Web Sitesi</li>
     </ul>
 
-<h3>Eğitim(Teaching)</h3>
-<hr>
-<ul>
-    <li>Web Design and Programming</li>
-    <li>Object Oriented Programming(C#,C++,Java)</li>
-    <li>Visual Programming(c#)</li>
-    <li>Mobile Programming(React, Native)</li>
-</ul>
-
-<h3>Hobiler(Hobbies)</h3>
-<hr>
-<ul>
-    <li>Kitap Okumak</li>
-    <li>Oyun Oynamak</li>
-    <li>Film/Dizi İzlemek</li>
-</ul>
-
-    <h3>Contact</h3>
+    <h3>Aldığım Dersler ve Beceriler (Skills & Courses)</h3>
     <hr>
-    <img src="tel.png" width="30">0545 400 99 99 <br>
-    <img src="images/email.png" width="30">akinacar0534@gmail.com <br>
-    <img src="images/adres.png" width="30">İstanbul/Büyükçekmece <br>
+    <ul>
+        <li>Web Design and Programming</li>
+        <li>Object Oriented Programming (C#, C++, Java)</li>
+        <li>Visual Programming (C#)</li>
+        <li>Mobile Programming (React Native)</li>
+    </ul>
 
+    <h3>Hobiler (Hobbies)</h3>
+    <hr>
+    <ul>
+        <li>Kitap Okumak</li>
+        <li>Oyun Oynamak</li>
+        <li>Film / Dizi İzlemek</li>
+    </ul>
 
-    <a href="https://api.whatsapp.com/send?phone=05427392236">
-        <img src="wp.png" width="30">
+    <h3>İletişim (Contact)</h3>
+    <hr>
     
-    </a>Whatsapp İletişim <br>
+    <div class="contact-item">
+        <img src="tel.png" width="24" alt="Telefon">
+        <span>0545 400 99 99</span>
+    </div>
+    
+    <div class="contact-item">
+        <img src="images/email.png" width="24" alt="E-posta">
+        <span>akinacar0534@gmail.com</span>
+    </div>
+    
+    <div class="contact-item">
+        <img src="images/adres.png" width="24" alt="Adres">
+        <span>İstanbul / Büyükçekmece</span>
+    </div>
 
+    <div class="contact-item" style="margin-top: 15px;">
+        <a href="https://api.whatsapp.com/send?phone=05427392236" target="_blank" class="contact-item">
+            <img src="wp.png" width="24" alt="WhatsApp">
+            <span>WhatsApp ile İletişime Geç</span>
+        </a>
+    </div>
 
 </body>
 </html>
